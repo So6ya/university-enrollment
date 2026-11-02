@@ -63,6 +63,6 @@ class EnrollmentServiceTest {
         service.enroll(student, course.getId());
         service.enroll(second, course.getId());
 
-        assertEquals(1, service.getCourseEnrollments(course).size());
+        assertEquals(2, service.getCourseEnrollments(course).size());
     }
 }

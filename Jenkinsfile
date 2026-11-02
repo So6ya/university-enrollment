@@ -1,19 +1,22 @@
 pipeline {
     agent any
+    environment {
+        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-21.0.12'
+    }
     stages {
         stage('Build') {
             steps {
-                bat 'mvn compile'
+                bat 'apache-maven-3.10.0\\bin\\mvn.cmd compile'
             }
         }
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'apache-maven-3.10.0\\bin\\mvn.cmd test'
             }
         }
         stage('Package') {
             steps {
-                bat 'mvn package -DskipTests'
+                bat 'apache-maven-3.10.0\\bin\\mvn.cmd package -DskipTests'
             }
         }
     }
