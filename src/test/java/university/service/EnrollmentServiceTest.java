@@ -26,8 +26,8 @@ class EnrollmentServiceTest {
         enrollmentRepository = new InMemoryEnrollmentRepository();
         service = new EnrollmentService(courseRepository, enrollmentRepository);
 
-        student = new Student(1L, "Rodya");
-        course = new Course(10L, "Rat");
+        student = new Student(1L, "Rodya", "dskdks");
+        course = new Course(10L, "Rat", "skdskdks");
 
         courseRepository.save(course);
     }
