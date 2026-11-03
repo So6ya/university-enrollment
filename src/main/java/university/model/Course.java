@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Course {
     private final Long id;
     private final String title;
+    private final String decription;
 
     public Course(Long id, String title) {
         this.id = id;
