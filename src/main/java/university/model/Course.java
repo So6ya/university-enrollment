@@ -6,6 +6,7 @@ public class Course {
     private final Long id;
     private final String title;
 
+
     public Course(Long id, String title) {
         this.id = id;
         this.title = title;
