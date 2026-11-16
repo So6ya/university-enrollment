@@ -4,9 +4,19 @@ pipeline {
         JAVA_HOME = 'C:\\Program Files\\Java\\jdk-21.0.12'
     }
     stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
         stage('Build') {
             steps {
                 bat 'apache-maven-3.10.0\\bin\\mvn.cmd compile'
+            }
+        }
+        stage('Static Analysis') {
+            steps {
+                bat 'apache-maven-3.10.0\\bin\\mvn.cmd checkstyle:check'
             }
         }
         stage('Test') {
