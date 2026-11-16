@@ -46,7 +46,7 @@ public class EnrollmentService {
         log.info("Student {} successfully enrolled in course id={}",
                 student.getName(), course.getId());
 
-        // Этот комментарий специально сделан очень длинным, чтобы превысить лимит Checkstyle в 120 символов и уронить сборку в Дженкинсе для демонстрации
+
         return enrollment;
     }
 
