@@ -29,7 +29,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Logging: SLF4J facade + Logback implementation -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -50,7 +49,6 @@
                 <version>3.6.0</version>
             </plugin>
 
-            <!-- Static Analysis -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
