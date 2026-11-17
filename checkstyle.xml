@@ -7,29 +7,23 @@
     <property name="severity" value="warning"/>
     <property name="fileExtensions" value="java"/>
 
-    <!-- Не использовать табы -->
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
 
-    <!-- Максимальная длина строки -->
     <module name="LineLength">
         <property name="max" value="120"/>
     </module>
 
     <module name="TreeWalker">
-        <!-- Именование пакетов: только строчные буквы и точки -->
         <module name="PackageName">
             <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
         </module>
 
-        <!-- Классы: UpperCamelCase -->
         <module name="TypeName"/>
 
-        <!-- Методы: lowerCamelCase -->
         <module name="MethodName"/>
 
-        <!-- Один public-класс на файл -->
         <module name="OneTopLevelClass"/>
     </module>
 </module>
